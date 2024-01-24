@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tally Count</title>
     <link rel="stylesheet" href="/styles.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        Tally Count
+    <header class="header">
+        <h1>
+            Tally Count
+        </h1>
     </header>
 
-    <div>
+    <aside class="controls">
         <label>
             <span>Display</span>
             <select>
@@ -34,11 +35,18 @@
                 <option>Counter 3</option>
             </select>
         </label>
-    </div>
+        <button>Settings</button>
+    </aside>
 
-    <button>Settings</button>
+    <main class="counter">
+        <input class="counter__value" readonly value="1000">
+        <div class="counter__actions">
+            <button class="counter__button counter__button_first">-</button>
+            <button class="counter__button">+</button>
+        </div>
+    </main>
 
-    <div></div>
+
     <footer></footer>
 </body>
 </html>
